@@ -1,4 +1,5 @@
 import platform
+from utils import kubectl
 
 
 def validate_metallb_config(ip_ranges="192.168.0.105"):
