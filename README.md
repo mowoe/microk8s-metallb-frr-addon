@@ -6,7 +6,16 @@ This addon provides the charts to deploy metallb featuring frr-mode in microk8s.
 First, add this repo as a source for addons on your cluster:
 ```bash
 microk8s addons repo add mowoe-metallb-frr https://github.com/mowoe/microk8s-metallb-frr-addon
-microk8s addons repo update mowoe-metallb
+microk8s addons repo update mowoe-metallb-frr
+```
+You should be able to see the addon when executing `metallb status`:
+```
+microk8s is running
+addons:
+  enabled:
+    ...
+  disabled:
+    metallb-frr          # (mowoe-metallb-frr) Loadbalancer for your Kubernetes cluster (FRR Mode)
 ```
 Then you can enable (-> install) the addon:
 ```bash
