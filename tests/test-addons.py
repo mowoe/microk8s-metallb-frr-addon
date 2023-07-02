@@ -2,7 +2,7 @@ import sh
 import yaml
 
 from utils import microk8s_enable, wait_for_pod_state, microk8s_disable
-
+from validators import validate_metallb_config
 
 class TestAddons(object):
     def test_metallb_addon(self):
