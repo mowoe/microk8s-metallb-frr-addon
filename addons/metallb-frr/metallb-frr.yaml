@@ -691,7 +691,7 @@ webhooks:
         name: webhook-service
         namespace: metallb-system
         path: /validate-metallb-io-v1beta2-bgppeer
-    failurePolicy: Ignore
+    failurePolicy: 'Fail'
     name: bgppeersvalidationwebhook.metallb.io
     rules:
       - apiGroups:
@@ -711,7 +711,7 @@ webhooks:
         name: webhook-service
         namespace: metallb-system
         path: /validate-metallb-io-v1beta1-addresspool
-    failurePolicy: Ignore
+    failurePolicy: 'Fail'
     name: addresspoolvalidationwebhook.metallb.io
     rules:
       - apiGroups:
@@ -731,7 +731,7 @@ webhooks:
         name: webhook-service
         namespace: metallb-system
         path: /validate-metallb-io-v1beta1-bfdprofile
-    failurePolicy: Ignore
+    failurePolicy: 'Fail'
     name: bfdprofilevalidationwebhook.metallb.io
     rules:
       - apiGroups:
@@ -750,7 +750,7 @@ webhooks:
         name: webhook-service
         namespace: metallb-system
         path: /validate-metallb-io-v1beta1-bgpadvertisement
-    failurePolicy: Ignore
+    failurePolicy: 'Fail'
     name: bgpadvertisementvalidationwebhook.metallb.io
     rules:
       - apiGroups:
@@ -770,7 +770,7 @@ webhooks:
         name: webhook-service
         namespace: metallb-system
         path: /validate-metallb-io-v1beta1-community
-    failurePolicy: Ignore
+    failurePolicy: 'Fail'
     name: communityvalidationwebhook.metallb.io
     rules:
       - apiGroups:
@@ -790,7 +790,7 @@ webhooks:
         name: webhook-service
         namespace: metallb-system
         path: /validate-metallb-io-v1beta1-ipaddresspool
-    failurePolicy: Ignore
+    failurePolicy: 'Fail'
     name: ipaddresspoolvalidationwebhook.metallb.io
     rules:
       - apiGroups:
@@ -810,7 +810,7 @@ webhooks:
         name: webhook-service
         namespace: metallb-system
         path: /validate-metallb-io-v1beta1-l2advertisement
-    failurePolicy: Ignore
+    failurePolicy: 'Fail'
     name: l2advertisementvalidationwebhook.metallb.io
     rules:
       - apiGroups:

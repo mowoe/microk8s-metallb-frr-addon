@@ -22,5 +22,12 @@ Then you can enable (-> install) the addon:
 microk8s enable mowoe-metallb-frr/metallb-frr
 ```
 
+### Pitfall
+For some reason, the metallb deployment sometimes messes up the cert configuration. A simple workaround for this is to disable the webhook checking.
+You can do this by applying `failurePolicy.patch`:
+```bash
+git apply failurePolicy.patch
+```
+
 ### ⚠️ 
 This addon is incompatible with the core metallb addon and *will* break deployments, if they are installed simultaneously. To be safe, be sure to disable all other metallb addons, before installing this one.
